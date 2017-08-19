@@ -15,6 +15,7 @@
     var defaults = {
       speed:  500,
       easing: 'swing',
+      offset: 0,
       hash: true,
     };
 
@@ -37,7 +38,7 @@
             // Only prevent default if animation is actually gonna happen
             event.preventDefault();
             $('html, body').stop().animate({
-              scrollTop: $target.offset().top,
+              scrollTop: $target.offset().top + config.offset,
             }, config.speed, config.easing, function() {
               // Callback after animation
               // Must change focus!
