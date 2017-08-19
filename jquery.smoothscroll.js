@@ -1,6 +1,6 @@
 /*
  * jquery.smoothscroll.js - jQuery plugin to animate scrolling to anchor links
- * Version 1.0.2 (Aug 19, 2017)
+ * Version 1.0.3 (Aug 19, 2017)
  * Copyright 2017 Kite - https://github.com/ixkaito
  * MIT License
  */
@@ -47,6 +47,9 @@
                   history.pushState(null, null, hash);
                 } else if (0 == config.offset) {
                   window.location.hash = hash;
+                } else { // Fallback on old browsers without history API.
+                  var operator = (config.offset > 0 ? '+' : '-');
+                  window.location.hash = hash + '-offset-' + operator + Math.abs(config.offset);
                 }
               }
               // Must change focus!
