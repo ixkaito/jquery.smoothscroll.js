@@ -5,7 +5,7 @@
  * MIT License
  */
 
-/* eslint-disable no-var, key-spacing, no-invalid-this */
+/* eslint-disable no-var, no-invalid-this */
 (function($, undefined) {
 
   'use strict';
@@ -15,7 +15,7 @@
     var defaults = {
       speed:  500,
       easing: 'swing',
-      hash:   true,
+      hash: true,
     };
 
     var config = $.extend(true, {}, defaults, options);
