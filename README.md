@@ -2,20 +2,36 @@
 
 jQuery plugin to animate scrolling to anchor links
 
-## Download or Install via npm
+## Download or install via npm
 
-[Download jquery.smoothscroll.js](https://github.com/ixkaito/jquery.smoothscroll.js/archive/master.zip)
+[jquery.smoothscroll.js](https://github.com/ixkaito/jquery.smoothscroll.js/archive/master.zip)
 
-or 
+or
 
-```
+```bash
 $ npm install --save-prod jquery.smoothscroll.js
+```
+
+## Include jquery.smoothscroll.js on your site
+
+```html
+<script src="jquery.min.js"></script>
+<script src="jquery.smoothscroll.min.js"></script>
+```
+
+**Webpack or Browserify**
+
+```javascript
+global.$ = global.jQuery = require('jquery');
+require('jquery.smoothscroll.js');
 ```
 
 ## Usage
 
 ```javascript
-$('a[href*="#"]').smoothscroll();
+$(function() {
+  $('a[href*="#"]').smoothscroll();
+});
 ```
 
 ## Options and Settings
