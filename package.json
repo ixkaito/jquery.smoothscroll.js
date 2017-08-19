@@ -1,0 +1,24 @@
+{
+  "name": "jquery.smoothscroll",
+  "version": "1.0.0",
+  "description": "jQuery plugin to animate scrolling to anchor links",
+  "main": "jquery.smoothscroll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ixkaito/jquery.smoothscroll.git"
+  },
+  "keywords": [
+    "jQuery",
+    "smooth",
+    "scroll"
+  ],
+  "author": "Kite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ixkaito/jquery.smoothscroll/issues"
+  },
+  "homepage": "https://github.com/ixkaito/jquery.smoothscroll#readme"
+}
