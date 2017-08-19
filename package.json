@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ixkaito/jquery.smoothscroll.js/issues"
   },
-  "homepage": "https://github.com/ixkaito/jquery.smoothscroll.js#readme"
+  "homepage": "https://github.com/ixkaito/jquery.smoothscroll.js#readme",
+  "dependencies": {
+    "jquery": "*"
+  }
 }
