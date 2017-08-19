@@ -1,5 +1,5 @@
 /*
- * jquery.smoothscroll.js - Animate scrolling to anchor links jQuery plugin
+ * jquery.smoothscroll.js - jQuery plugin to animate scrolling to anchor links
  * Version 1.0.0 (Aug 19, 2017)
  * Copyright 2017 Kite - https://github.com/ixkaito
  * MIT License
