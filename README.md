@@ -15,6 +15,7 @@ $('a[href*="#"]').smoothscroll();
 $('a[href*="#"]').smoothscroll({
   speed: 500,
   easing: 'swing',
+  offset: 0,
   hash: true,
 });
 ```
