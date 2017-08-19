@@ -1,6 +1,6 @@
 {
   "name": "jquery.smoothscroll",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "jQuery plugin to animate scrolling to anchor links",
   "main": "jquery.smoothscroll.js",
   "scripts": {
