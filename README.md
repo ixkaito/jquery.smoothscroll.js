@@ -38,7 +38,7 @@ $(function() {
 
 ```javascript
 $('a[href*="#"]').smoothscroll({
-  speed: 500,
+  duration: 400,
   easing: 'swing',
   offset: 0,
   hash: true,

@@ -1,6 +1,6 @@
 /*
  * jquery.smoothscroll.js - jQuery plugin to animate scrolling to anchor links
- * Version 1.0.0 (Aug 19, 2017)
+ * Version 1.0.2 (Aug 19, 2017)
  * Copyright 2017 Kite - https://github.com/ixkaito
  * MIT License
  */
@@ -13,7 +13,7 @@
   $.fn.smoothscroll = function(options) {
 
     var defaults = {
-      speed:  500,
+      duration:  400,
       easing: 'swing',
       offset: 0,
       hash: true,
@@ -39,8 +39,16 @@
             event.preventDefault();
             $('html, body').stop().animate({
               scrollTop: $target.offset().top + config.offset,
-            }, config.speed, config.easing, function() {
+            }, config.duration, config.easing, function() {
               // Callback after animation
+              // Add the target hash to the end of the URL
+              if (config.hash) {
+                if (history.pushState) {
+                  history.pushState(null, null, hash);
+                } else if (0 == config.offset) {
+                  window.location.hash = hash;
+                }
+              }
               // Must change focus!
               $target.focus();
               if ($target.is(':focus')) { // Checking if the target was focused
@@ -48,10 +56,6 @@
               } else {
                 $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                 $target.focus(); // Set focus again
-              }
-              // Add the target hash to the end of the URL
-              if (config.hash) {
-                window.location.hash = hash;
               }
             });
           }
