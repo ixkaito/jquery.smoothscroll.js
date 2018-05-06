@@ -17,7 +17,7 @@
       easing: 'swing',
       offset: 0,
       hash: true,
-      focus: true
+      focus: true,
     };
 
     var config = $.extend(true, {}, defaults, options);
