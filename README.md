@@ -1,10 +1,15 @@
 # jquery.smoothscroll.js
 
+[![GitHub release](https://img.shields.io/github/release/ixkaito/jquery.smoothscroll.js.svg?style=flat-square)](https://github.com/ixkaito/jquery.smoothscroll.js/releases)
+[![npm](https://img.shields.io/npm/v/jquery.smoothscroll.js.svg?style=flat-square)](https://www.npmjs.com/package/jquery.smoothscroll.js)
+[![license](https://img.shields.io/github/license/ixkaito/jquery.smoothscroll.js.svg?maxAge=2592000&style=flat-square)](https://github.com/ixkaito/jquery.smoothscroll.js/blob/master/LICENSE)
+
 jQuery plugin to animate scrolling to anchor links
 
 ## Downloading or installing via npm
 
-[jquery.smoothscroll.js](https://github.com/ixkaito/jquery.smoothscroll.js/archive/master.zip)
+[![ZIP](https://img.shields.io/badge/download-zip-yellow.svg?longCache=true&style=for-the-badge)](https://github.com/ixkaito/jquery.smoothscroll.js/archive/master.zip)
+[![ZIP](https://img.shields.io/badge/download-tar.gz-orange.svg?longCache=true&style=for-the-badge)](https://github.com/ixkaito/jquery.smoothscroll.js/archive/master.tar.gz)
 
 or
 
