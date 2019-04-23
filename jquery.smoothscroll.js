@@ -4,8 +4,6 @@
  * Copyright 2017 Kite - https://github.com/ixkaito
  * MIT License
  */
-
-/* eslint-disable no-var, no-invalid-this */
 (function($, undefined) {
 
   'use strict';
