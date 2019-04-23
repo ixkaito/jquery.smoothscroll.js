@@ -1,4 +1,5 @@
-/*
+/**
+ * @preserve
  * jquery.smoothscroll.js - jQuery plugin to animate scrolling to anchor links
  * Version 1.0.4 (Aug 19, 2017)
  * Copyright 2017 Kite - https://github.com/ixkaito
@@ -30,7 +31,7 @@
         ) {
           // Figure out element to scroll to
           var hash = this.hash;
-          var $target = $(hash);
+          var $target = hash ? $(hash) : $('html');
           $target = $target.length ? $target : $('[name=' + this.hash.slice(1) + ']');
           // Does a scroll target exist?
           if ($target.length) {
